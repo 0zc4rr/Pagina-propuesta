@@ -211,8 +211,8 @@ const Container = styled.div`
           .switch {
             position: relative;
             display: inline-block;
-            width: 60px;
-            height: 34px;
+            width: 50px;
+            height: 30px;
             .theme-swither {
               opacity: 0;
               width: 0;
@@ -220,7 +220,7 @@ const Container = styled.div`
               &:checked + .slider:before {
                 left: 4px;
                 content: "☾";
-                transform: translateX(26px);
+                transform: translateX(30px);
               }
             }
             .slider {
@@ -239,14 +239,14 @@ const Container = styled.div`
                 height: 0px;
                 width: 0px;
                 left: -10px;
-                top: 16px;
+                top: 15px;
                 line-height: 0px;
                 transition: 0.4s;
               }
               &.round {
-                border-radius: 34px;
+                border-radius: 30px;
                 &::before {
-                  border-radius: 50%;
+                  border-radius: 40%;
                 }
               }
             }

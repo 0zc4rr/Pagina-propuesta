@@ -49,9 +49,9 @@ const Container = styled.div`
     box-shadow: 8px;
     margin: 0;
     border-radius: 14px;
-    background-color: #353535ff;
-  }
-  .admin {
-    margin-top: 80;
+    background-color: #827f7fff;
+    p {
+      color: #fff;
+    }
   }
 `;
