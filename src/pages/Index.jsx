@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { SlLogin } from "react-icons/sl";
+import Slider from "../components/Slider";
 export function Index() {
   return (
     <Container>
@@ -16,18 +17,23 @@ export function Index() {
         </div>
         <div className="admin">
           <p>Es usted un administrativo?</p>
+
           <div>
             <button className="sesion" onClick={"Iniciar"}>
-              <SlLogin />
+              iniciar sesion
             </button>
           </div>
         </div>
+      </div>
+      <div calssName="slide">
+        <Slider />
       </div>
     </Container>
   );
 }
 const Container = styled.div`
-  height: 100vh;
+  width: 100%;
+
   h1 {
     padding: 50px;
     position: 50px 0;

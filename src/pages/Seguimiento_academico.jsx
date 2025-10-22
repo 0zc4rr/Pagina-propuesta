@@ -8,9 +8,7 @@ export function Seguimiento_academico() {
           title="Análisis de Monitoreo y Seguimiento Académico - 23II"
           width="100%"
           height="100%"
-          src="https://app.powerbi.com/view?r=eyJrIjoiNmM5ZThhNjMtMzQ5MS00MDk1LTg5ODctY2FjN2ViYjIyYjcxIiwidCI6IjBhNzc3NjQwLTJhOGUtNDE4Zi1iZDMzLWQ5ZWU4ZjdlMzY0NiIsImMiOjR9"
-          allowFullScreen="true"
-        ></iframe>
+          src=""></iframe>
       </div>
     </Container>
   );
