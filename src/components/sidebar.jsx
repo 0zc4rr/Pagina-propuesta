@@ -30,8 +30,7 @@ export function Sidebar({ sidebarOpen, setSidebarOpen }) {
         <div className="LinkContainer" key={label}>
           <NavLink
             to={to}
-            className={({ isActive }) => `Links${isActive ? ` active` : ``}`}
-          >
+            className={({ isActive }) => `Links${isActive ? ` active` : ``}`}>
             <div className="Linkicon">{icon}</div>
             {sidebarOpen && <span>{label}</span>}
           </NavLink>
@@ -49,8 +48,7 @@ export function Sidebar({ sidebarOpen, setSidebarOpen }) {
                     istheme={theme}
                     type="checkbox"
                     className="modo"
-                    onClick={CambiarTheme}
-                  ></input>
+                    onClick={CambiarTheme}></input>
                   <span istheme={theme} className="slider round"></span>
                 </label>
               </div>
@@ -133,7 +131,7 @@ const Container = styled.div`
       // justify-content: center;
       // align-items: center;
       // background: {({ themeUse }) =>
-      //   themeUse === "dark" ? "#fff" : "transparent"};
+      //   themeUse === "dark" ? "#ffffffff" : "transparent"};
       // border-radius: 8px;
       // padding: 8px;
 
