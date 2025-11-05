@@ -19,13 +19,13 @@ export function Index() {
           <p>Es usted un administrativo?</p>
 
           <div>
-            <button className="sesion" onClick={"Iniciar"}>
+            <button className="sesion" onClick={() => handleLogin()}>
               iniciar sesion
             </button>
           </div>
         </div>
       </div>
-      <div calssName="slide">
+      <div className="slide">
         <Slider />
       </div>
     </Container>
@@ -36,7 +36,6 @@ const Container = styled.div`
 
   h1 {
     padding: 50px;
-    position: 50px 0;
     text-align: center;
     margin-top: 10px;
   }
@@ -46,14 +45,12 @@ const Container = styled.div`
     font-size: 20px;
   }
   .intro {
-    margin-top: 40px;
+    margin-top: 40px auto;
     margin: 40px;
     text-align: center;
     padding: 20px;
-    width: 800px 50px;
-
+    max-width: 800px;
     box-shadow: 8px;
-    margin: 0;
     border-radius: 14px;
     background-color: #827f7fff;
     p {

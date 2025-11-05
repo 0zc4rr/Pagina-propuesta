@@ -9,7 +9,6 @@ export function Carreras_transformadoras() {
 const Container = styled.div`
   height: 100vh;
   h1 {
-    color: red;
     padding: 40px;
   }
 `;

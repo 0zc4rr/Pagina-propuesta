@@ -121,19 +121,19 @@ const Container = styled.div`
       display: flex;
       width: 400px;
 
-      //1
-      max-width: 100%;
-      height: auto;
-      filter: ${({ themeUse }) =>
-        themeUse === "dark" ? "brightness(200%) invert(1)" : "none"};
+      // //1
+      // max-width: 100%;
+      // height: auto;
+      // filter: {({ themeUse }) =>
+      //   themeUse === "dark" ? "brightness(200%) invert(1)" : "none"};
 
       //2
-      // justify-content: center;
-      // align-items: center;
-      // background: {({ themeUse }) =>
-      //   themeUse === "dark" ? "#ffffffff" : "transparent"};
-      // border-radius: 8px;
-      // padding: 8px;
+      justify-content: center;
+      align-items: center;
+      background: ${({ themeUse }) =>
+        themeUse === "dark" ? "#ffffffff" : "transparent"};
+      border-radius: 8px;
+      padding: 8px;
 
       cursor: pointer;
       transition: all 0.3s;

@@ -29,6 +29,7 @@ function Enlaces() {
   return (
     <div
       className="containerp"
+      style={{ width: "100%", height: "100vh" }}
       dangerouslySetInnerHTML={{ __html: embedHtml }}
     />
   );

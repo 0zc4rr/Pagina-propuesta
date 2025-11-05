@@ -29,44 +29,71 @@ const slidesData = [
 
 export default function ContentSwiper() {
   return (
-    <Swiper
-      modules={[Navigation]}
-      spaceBetween={10}
-      slidesPerView={1}
-      navigation
-      onSlideChange={() => console.log("slide change")}
-      onSwiper={(swiper) => console.log(swiper)}>
-      {slidesData.map((slide) => (
-        <slideSlide key={slide.id}>
-          <SlideContent>
-            <ImageWrapper>
-              <img src={slide.imgSrc} alt={slide.altText} />
-            </ImageWrapper>
-            <TextContent>
-              <h2>{slide.altText}</h2>.<p>{slide.text}</p>
-            </TextContent>
-          </SlideContent>
-        </slideSlide>
-      ))}
-    </Swiper>
+    <SwiperContainer>
+      <Swiper
+        modules={[Navigation]}
+        spaceBetween={30}
+        slidesPerView={1}
+        navigation
+        onSlideChange={() => console.log("slide change")}
+        onSwiper={(swiper) => console.log(swiper)}>
+        {slidesData.map((slide) => (
+          <SwiperSlide key={slide.id}>
+            <SlideContent>
+              <ImageWrapper>
+                <img src={slide.imgSrc} alt={slide.altText} />
+              </ImageWrapper>
+              <TextContent>
+                <h2>{slide.altText}</h2>
+                <p>{slide.text}</p>
+              </TextContent>
+            </SlideContent>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </SwiperContainer>
   );
 }
+const SwiperContainer = styled.div`
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
+
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+  .swiper-slide {
+    width: 100%;
+    height: 100%;
+  }
+`;
 const SlideContent = styled.div`
   display: flex;
-  align: flex;
+  align-items: center;
   height: 400px;
   width: 100%;
+  margin: 20px 0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 `;
 
 const ImageWrapper = styled.div`
   flex: 0 0 50%;
   height: 100%;
+  position: relative;
+  overflow: hidden;
 
   img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center;
     display: block;
+    max-height: 400px;
+    transition: transform 0.3s ease;
   }
 `;
 const TextContent = styled.div`
@@ -74,13 +101,17 @@ const TextContent = styled.div`
   padding: 20px;
   box-sizing: border-box;
   font-family: sans-serif;
+  backgrpund-color: #fff;
 
   h2 {
     margin-top: 0;
-    color: #333;
+    color: #4d4a4aff;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
   }
   p {
-    color: %555;
+    color: #7b7777ff;
     line-height: 1.5;
+    font-size: 1rem;
   }
 `;
