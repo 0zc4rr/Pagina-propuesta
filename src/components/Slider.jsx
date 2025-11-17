@@ -9,19 +9,19 @@ import styled from "styled-components";
 const slidesData = [
   {
     id: 1,
-    imgSrc: "src/assets/cbb.jpg",
+    imgSrc: "/images/cbb.jpg",
     altText: "Reportes Estudiantiles",
     text: "Puedes ver los reportes academicos en Seguimiento Academico",
   },
   {
     id: 2,
-    imgSrc: "src/assets/co.jpg",
+    imgSrc: "/images/co.jpg",
     altText: "Encuestas Semestrales",
     text: "Pudes ver los reportes de las encuestas en la seccion de Carreras Transformadoras",
   },
   {
     id: 3,
-    imgSrc: "src/assets/coch.jpg",
+    imgSrc: "/images/coch.jpg",
     altText: "Mas Reportes",
     text: "Puedes ver los otros reportes y graficos en Apoyo Estudiantil",
   },
